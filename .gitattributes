@@ -1,0 +1,6 @@
+* text=auto
+
+# Scripts executados no MSYS2/GitHub Actions precisam de LF.
+*.sh text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf

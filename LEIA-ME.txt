@@ -1,0 +1,72 @@
+===========================================================
+ EpicFrame Studios 0.1.0 - Windows x64 (portátil)
+===========================================================
+
+Editor de vídeo leve, em português, para notebooks antigos.
+Não precisa instalar nada e não exige administrador.
+
+COMO ABRIR
+----------
+1. Extraia todo o conteúdo do ZIP para uma pasta fixa,
+   por exemplo: C:\EpicFrame
+   (não execute direto de dentro do ZIP)
+2. Clique duas vezes em EpicFrameStudios.exe.
+3. Na primeira execução, o SmartScreen pode avisar que o
+   aplicativo não é assinado. Clique em "Mais informações"
+   e depois em "Executar assim mesmo".
+
+O QUE VEM NA PASTA
+------------------
+EpicFrameStudios.exe  programa principal
+ffmpeg.exe            leitura/exportação de mídia
+*.dll                 bibliotecas necessárias (SDL2, FFmpeg etc.)
+README.md             documentação completa
+LEIA-ME.txt           este arquivo
+LICENSE               licença GPL-3.0
+THIRD_PARTY.md        licenças de terceiros
+
+REQUISITOS
+----------
+Windows 7 ou superior, 64 bits.
+Em PCs muito antigos, use a prévia em "Metade" ou "Um quarto"
+no menu Exibição.
+
+PRIMEIROS PASSOS
+----------------
+1. Arquivo > Importar mídia (ou arraste os arquivos para a janela).
+2. Arraste a mídia da bin para a linha do tempo (V1 para vídeo).
+3. Arraste as bordas dos clipes para aparar.
+4. Ctrl+K divide o clipe no cursor; Del exclui a seleção.
+5. Selecione um clipe para editar fades, opacidade e cor no Inspetor.
+6. Arquivo > Salvar para gravar o projeto .efsproj.
+
+ATALHOS
+-------
+Ctrl+N  novo projeto          Ctrl+S  salvar
+Ctrl+O  abrir projeto         Ctrl+I  importar mídia
+Ctrl+K  dividir no cursor     Del     excluir seleção
+Ctrl+D  duplicar              Ctrl+A  selecionar tudo
+Espaço  reproduzir/pausar     Home    ir ao início
+F11     modo cinema           Ctrl+0  redefinir layout
+
+ESTA VERSÃO
+-----------
+A montagem, o projeto e a edição de clipes já funcionam.
+A prévia decodificada e a exportação MP4 estão em desenvolvimento.
+Acompanhe as atualizações em:
+https://github.com/Eliene-byte/EpicFrame-Studios
+
+PROBLEMAS COMUNS
+----------------
+- "Não foi possível abrir a mídia": confirme que ffmpeg.exe e as DLLs
+  estão na mesma pasta do executável.
+- Vídeo não aparece na prévia: esta versão ainda mostra apenas os
+  monitores informativos; a decodificação será adicionada em breve.
+- O layout ficou estranho: menu Exibição > Redefinir layout (Ctrl+0).
+- Antivírus bloqueou: adicione a pasta às exceções ou compile você
+  mesmo pelo GitHub Actions.
+
+LICENÇA
+-------
+GPL-3.0-or-later. O texto completo está em LICENSE.
+Créditos de SDL2, Dear ImGui, nlohmann/json e FFmpeg em THIRD_PARTY.md.
